@@ -2,4 +2,6 @@
   Preload
  */
 
+document.addEventListener('DOMCONTENTLOADED', () => {
   
+});
