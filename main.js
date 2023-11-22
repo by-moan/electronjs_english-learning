@@ -10,17 +10,16 @@ function createWindow () {
     }
   })
 
-  ipcMain.on('something', () => {
-    alert("func made from main.js");
-  });
+  function thing(){
+    alert("From main.js");
+  }
 
-  main_win.loadFile('index.html')
+  main_win.loadFile('index.html');
 }
 
 app.whenReady().then(() => {
-  ipcMain.on('')
+  ipcMain.on('alert_main', thing);
   createWindow()
-
   app.on('activate', function () {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })
