@@ -27,12 +27,15 @@ function create_win() {
     });
   })
 
-  main_win.loadFile('index.html')
+  //main_win.loadFile('index.html')
+  main_win.menuBarVisible = false;
+
+  //debugs
+  main_win.loadURL('http://localhost:5500/index.html');
 }
 
 app.whenReady().then(() => {
-  ipcMain.on('')
-  createWindow()
+  create_win();
 
   app.on('activate', function () {
     if (BrowserWindow.getAllWindows().length === 0) create_win();

@@ -1,3 +1,21 @@
 /* styles.css */
 
 /* Add styles here to customize the appearance of your app */
+
+:root {
+    --deb_out: #f00;
+}
+
+html{
+    background-color: rgb(68, 68, 68);
+    position: absolute;
+    width: calc(100% + 13px);
+    margin: -7px;
+    margin-top: -20px;
+    margin-right: -15154px;
+    overflow: hidden;
+}
+
+.head {
+    outline: 1px solid var(--deb_out);
+}
