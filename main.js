@@ -27,12 +27,12 @@ function create_win() {
     });
   })
 
-  main_win.loadFile('index.html');
-  main_win.menuBarVisible = false;
+  main_win.loadFile('index.html')
 }
 
 app.whenReady().then(() => {
-  create_win();
+  ipcMain.on('')
+  createWindow()
 
   app.on('activate', function () {
     if (BrowserWindow.getAllWindows().length === 0) create_win();
