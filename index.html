@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-
-  <script src="render.js"/>
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>asdes</title>
+  </head>
+  <body>
+    <!--
+    <input type="button" name="" id="bt1" value="bt1">
+    <input type="text" id="inp_txt1">
+    -->
+      <div class="head">
+        <h1>Titulo:</h1>
+        subtitulo
+      </div>
+    <script src="./renderer.js"></script>
+  </body>
 </html>
