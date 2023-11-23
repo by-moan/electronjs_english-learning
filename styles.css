@@ -2,20 +2,48 @@
 
 /* Add styles here to customize the appearance of your app */
 
+/*attributes applied to objects in html to reduce line use*/
+
 :root {
-    --deb_out: #f00;
+    --debug_color: rgb(255, 107, 107);
+    --line_debug: 1px solid var(--debug_color);
+
+    --txt_color: #fff;
+    --font_face: Arial, Helvetica, sans-serif;
 }
+
+.absolute {
+    position:absolute;
+}
+
+.whole_width{
+    width: 100%;
+}
+
+.whole_height{
+    height: 100%;
+}
+
+
+/*---------------------------------------*/
 
 html{
-    background-color: rgb(68, 68, 68);
-    position: absolute;
-    width: calc(100% + 13px);
-    height: 500px;
-    margin: -7px;
-    margin-top: -21px;
+    font-family: var(--font_face);
+    background-color: #444444;
+    height: calc(100% - 1px);
     overflow: hidden;
+    margin: -8px;
+    color: var(--txt_color);
 }
 
-.head {
-    outline: 1px solid var(--deb_out);
+header {
+    width: 100%;
+    background-color: #282828;
+    padding: 10px;
+    display: flex;
+}
+
+mod_body {
+    position: fixed;
+    padding: 5px;
 }
