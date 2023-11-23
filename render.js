@@ -16,4 +16,3 @@ bt1.addEventListener('click', function(event){
     window.el_API.setTitle(title_val);
     window.run_app.run();
 });
-window.thing.func();

@@ -9,7 +9,7 @@
 const { contextBridge, ipcRenderer } = require('electron');
 
 document.addEventListener('DOMCONTENTLOADED', () => {
-  
+  const html = document.getElementById("html")
 });
 
 
