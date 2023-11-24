@@ -5,14 +5,17 @@
  * `contextIsolation` is turned on. Use the contextBridge API in `preload.js`
  * to expose Node.js functionality from the main process.
  */
+document.addEventListener("DOMContentLoaded", function(event) {
+    bt1 = document.getElementById("info_al_but");
+    notif = document.getElementById("notif_background");
 
-function init(){
-    this.bt1 = document.getElementById("bt1");
-}
-var title_val;
+    notif.style.display = "none";
 
-bt1.addEventListener('click', function(event){
-    title_val = document.getElementById("inp_txt1").value;
-    window.el_API.setTitle(title_val);
-    window.run_app.run();
+    bt1.addEventListener("click", (event) =>{
+        alert("asd");
+    });
+});
+
+bt1.addEventListener("click", (event) =>{
+    alert("asd");
 });

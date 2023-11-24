@@ -5,7 +5,3 @@
  *
  * https://www.electronjs.org/docs/latest/tutorial/sandbox
  */
-
-document.addEventListener('DOMCONTENTLOADED', () => {
-  const html = document.getElementById("html")
-});
