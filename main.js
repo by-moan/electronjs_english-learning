@@ -14,19 +14,6 @@ function create_win() {
     const win = BrowserWindow.fromWebContents(webContents);
     win.setTitle(title);
   });
-
-  ipcMain.on('proc', (exec_path) => {
-    var exec_path = "C:\\Windows\\explorer.exe";
-    proc(exec_path, function(err, data) {
-      if (err){
-        console.error(err);
-        return;
-      }
-
-      console.log(data.toString());
-    });
-  })
-
   //main_win.loadFile('index.html')
   main_win.menuBarVisible = false;
 
