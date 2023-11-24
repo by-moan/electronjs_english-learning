@@ -6,13 +6,6 @@
  * https://www.electronjs.org/docs/latest/tutorial/sandbox
  */
 
-const { contextBridge, ipcRenderer } = require('electron');
-
 document.addEventListener('DOMCONTENTLOADED', () => {
   const html = document.getElementById("html")
-});
-
-
-contextBridge.exposeInMainWorld('thing', {
-  func: () => ipcRenderer.send('alert_main')
 });
